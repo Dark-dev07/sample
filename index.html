@@ -1,2 +1,148 @@
-djskalckd
-rjwikkals
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vhan Raiver Reyes - Portfolio</title>
+    <link rel="stylesheet" href="stylee.css">
+  
+  </head>
+  <body>
+   <header>
+      <h1>Vhan Raiver C. Reyes</h1>
+      <p>Html Website | Games | Taekwondo</p>
+    </header>
+
+    <div class="container">
+      <section class="about-me">
+        <h2>About Me</h2>
+        
+    <img id="image" src="Web.jpeg" alt="Image to adjust brightness">
+    
+    <div class="slider-container">
+        <label for="brightnessRange"></label><br>
+        <input type="range" id="brightnessRange" min="0" max="200" value="100" oninput="adjustBrightness(this.value)">
+    </div>
+        <p>
+          Hi, my name is Raiver, and I am a
+          <strong>19-year-old</strong>
+         <strong> <mark>12 ICT AMBER</mark> </strong>,
+          Aspiring WebSite page. I love Sports,
+          <mark>play On Games</mark>, and I am a fan of <i>music</i>. I’m
+          beginner about technology and coding.
+        </p>
+
+            <table>
+
+
+          <thead>
+
+            <tr>
+              <th>Skill</th>
+              <th>Proficiency</th>
+              <th>Experience (Years)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML & CSS</td>
+              <td><strong>Beginner</strong></td>
+              <td>2</td>
+            </tr>
+            
+            <tr>
+              <td>JavaScript</td>
+              <td><strong>Beginner</strong></td>
+              <td>1</td>
+            </tr>
+            
+            <tr>
+              <td>C++</td>
+              <td><strong>Beginner</strong></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              
+              <td>Python</td>
+              <td><strong>Beginner</strong></td>
+              <td>1</td>
+              </tr>
+              
+              <td>Codm</td>
+              <td><strong>Beginner</strong></td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+      <section class="portfolio">
+       <i>  <h2>Portfolio</h2> </i> 
+         <div class="portfolio-items">
+          <div class="portfolio-item">
+            <img src="./received_1066284101776845.jpeg" alt="Project 1" />
+           <hr> <h3>Project 1</h3>
+            <p>A description of the project goes here. <mark> <strong>HTML</strong> </mark></p>
+          </div>
+          <div class="portfolio-item">
+            <img src="./received_1050986269595322.jpeg" alt="Project 2" />
+         <hr>   <h3>Project 2</h3>
+            <p>A description of the project goes here. <mark><strong>CSS</mark> </strong> </p>
+          </div>
+          <div class="portfolio-item">
+            <img src="./images (7).jpeg" alt="Project 3" />
+        <hr>    <h3>Project 3</h3>
+            <p>A description of the project goes here. <mark> <strong>TAGLINE</mark> </strong> </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="./Sample.POST.js" method="POST">
+          <label for="name">
+            <span>Name:</span>
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label for="email">
+            <span>Email:</span>
+            <input type="email" name="email" id="email" required />
+          </label>
+          <input type="button" value="Submit" />
+          
+<script>
+
+        function adjustBrightness(value) {
+            var image = document.getElementById("image");
+            var brightness = value / 100;
+            image.style.filter = `brightness(${brightness})`;
+        }
+        
+              // Smooth Scroll to Sections
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+              e.preventDefault();
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+
+      // Hover Effect for Portfolio Items
+      const portfolioItems = document.querySelectorAll('.portfolio-item');
+      portfolioItems.forEach(item => {
+          item.addEventListener('mouseenter', () => {
+              item.style.transform = 'scale(1.05)';
+              item.style.transition = 'transform 0.3s ease-in-out';
+          });
+          item.addEventListener('mouseleave', () => {
+              item.style.transform = 'scale(1)';
+          });
+      });
+        </script>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
