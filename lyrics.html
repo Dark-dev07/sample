@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lyrics </title>
+    <link rel="stylesheet" href="lyrics.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lines = [
+                { text: "'Cause all I need..." , delay: 160 },
+                    
+                { text: "Is a beauty and a beat....", delay: 160 },
+                { text: "Who can make my life complete...", delay: 160 },
+                { text: "It's all 'bout you...", delay: 160 },
+                { text: "When the music makes you move...", delay: 160 },
+                { text: "Baby, do it like you do (uh, uh)", delay: 160 },
+                { text: "'Cause you", delay: 160 },
+                { text: "In time, ink lines", delay: 160 },
+            ];
+            
+            let currentLine = 0;
+            let currentChar = 0;
+
+            function typeCharacter() {
+                if (currentLine < lines.length) {
+                    const line = lines[currentLine];
+                    if (currentChar < line.text.length) {
+                        document.getElementById('lyrics').innerText += line.text[currentChar];
+                        currentChar++;
+                        setTimeout(typeCharacter, line.delay);
+                    } else {
+                        document.getElementById('lyrics').innerText += '\n';
+                        currentChar = 0;
+                        currentLine++;
+                        setTimeout(typeCharacter, 50);
+                    }
+                }
+            }
+
+            document.getElementById('startButton').addEventListener('click', function() {
+          
+                this.style.display = 'none';
+      
+                document.getElementById('lyrics').style.display = 'block';
+              
+                document.getElementById('lyrics').innerText = '';
+                typeCharacter();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>{{ beauty and the beast }}</h1>
+        <center>
+      <img src="lyra.jpg" alt="image">
+      </center>
+      
+      <center>
+         <audio id="sound"controls autoplay src="beat.mp3">
+           
+        </audio>
+        <button id="startButton">Start</button>
+        <pre id="lyrics"></pre>
+    </div>
+</body>
+</html>
