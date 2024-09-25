@@ -1,0 +1,97 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+body {
+  scroll-behavior: smooth;
+}
+/* Header */
+header>nav {
+  /* For Positioning */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  /* For Display */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+  padding: 24px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(11.8px);
+  -webkit-backdrop-filter: blur(11.8px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+}
+nav .logo {
+  font-size: large;
+  font-weight: 900;
+}
+nav .links a {
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+/* For Main content */
+.home {
+  width: 99vw;
+  height: 95vh;
+  margin-top: 45px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.home .text , .home .image{ /* Comma is equal to AND*/
+    /* border: 1px solid black; */
+    width: 50%;
+    
+}
+
+.home>.text>.text-child-1>h1{
+    font-size: 50px;
+}
+.home>.text>.text-child-1>p{
+    font-weight: 650;
+}
+.home>.text>.text-child-1,.home>.text>.text-child-2{
+    margin: 50px 0 0 10px;
+}
+.home>.text>.text-child-2>a{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 24px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.home>.text>.text-child-2>a:hover{
+    background: red;
+    color: white;
+}
+hr {
+  border: 8px solid blue;
+}
+img {
+  width: 600px;
+  height: 600px;
+  border: 8px solid black;
+  margin-top: 200px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+}
