@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let pattern of winPatterns) {
       const [a, b, c] = pattern;
       if (boardArray[a] && boardArray[a] === boardArray[b] && boardArray[a] === boardArray[c]) {
-        // Ganti latar belakang kotak yang menang
-        board.children[a].style.backgroundColor = "#32cd32"; // Warna hijau
+        board.children[a].style.backgroundColor = "#32cd32";
         board.children[b].style.backgroundColor = "#32cd32";
         board.children[c].style.backgroundColor = "#32cd32";
         return boardArray[a];
@@ -67,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
       board.appendChild(cell);
     }
 
-    // Hapus latar belakang dari semua kotak
     const cells = board.children;
     for (let i = 0; i < cells.length; i++) {
       cells[i].style.backgroundColor = "#eee";

@@ -1,6 +1,6 @@
 body {
   font-family: cursive, sans-serif;
-  background-image: url('Web.jpeg');
+  background-color: white;
   background-size: 50vw;
   margin: 0;
   display: flex;
@@ -8,10 +8,9 @@ body {
   align-items: center;
   height: 120vh;
 }
-
 .container {
   text-align: center;
-  background-image: url('ih.jpeg');
+  background-color: lightgray;
   background-position: center;
   padding: 20px;
   border-radius: 20px;
