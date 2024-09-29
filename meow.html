@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Animation</title>
+    <style>
+        /* Wrapper element */
+        .background-wrapper {
+            width: 80vw;
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            animation: changeBackground 15s infinite;
+        }
+
+        /* Keyframes for changing background image */
+        @keyframes changeBackground {
+            0% { background-image: url('meow1.jpeg'); }
+            33% { background-image: url('meow2.jpeg'); }
+            66% { background-image: url('meow4.jpeg'); }
+            100% { background-image: url('meow5.jpeg'); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-wrapper"></div>
+
+</body>
+</html>

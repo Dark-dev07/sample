@@ -1,11 +1,14 @@
-section {
+Section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+
 * {
+
   margin: 0;
+
   padding: 0;
   box-sizing: border-box;
   align-items: center;
@@ -18,7 +21,7 @@ header>nav {
   /* For Positioning */
   position: fixed;
   top: 0;
-  width: 99vw;
+  width: 100vw;
   z-index: 100;
   /* For Display */
   display: flex;
@@ -39,7 +42,9 @@ header>nav {
   border: 1px solid rgba(255, 255, 255, 0.38);
 }
 nav .logo {
+
   font-size: large;
+
   font-weight: 900;
 }
 nav .links a {
@@ -49,10 +54,12 @@ nav .links a {
 }
 /* For Main content */
 .home {
-  width: 90vw;
+  width: 99vw;
   height: 95vh;
   margin-top: 45px;
-  padding: 0px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 .home .text , .home .image{ /* Comma is equal to AND*/
     /* border: 1px solid black; */
@@ -62,15 +69,12 @@ nav .links a {
 
 .home>.text>.text-child-1>h1{
     font-size: 50px;
-    align-items: right;
 }
 .home>.text>.text-child-1>p{
     font-weight: 650;
-    align-items: right;
 }
 .home>.text>.text-child-1,.home>.text>.text-child-2{
-    margin: 0px 0 0 8px;
-    align-items: right;
+    margin: 50px 0 0 10px;
 }
 .home>.text>.text-child-2>a{
     border: 1px solid black;
@@ -78,24 +82,55 @@ nav .links a {
     color: black;
     font-size: 24px;
     font-weight: 700;
-    padding: 10px;
+    padding: 24px;
     border-radius: 10px;
     margin-right: 20px;
 }
-.home>.text>.text-child-2>a:hover{
-    background: red;
-    color: white;
+p {
+  padding: 35px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  display: flex;
+}
+h3 {
+  padding: 50px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+}
+h5 {
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+}
+img {
+  width: 350px;
+  height: 350px;
+  padding: 80px;
+}
+table {
+  width: 360px;
+  max-width: 360px;
+  margin: 10px 0;
+  border-collapse: collapse;
+  text-align: left;
+  border: 8px solid white;
+}
+table th,
+table td {
+ padding: 12px;
+
+}
+table th {
+  background-color: lightgray;
+  border: #ddd;
+}
+table tr:nth-child(even) {
+  background-color: black;
 }
 
-img {
-  width: 450px;
-  height: 250px;
-  border: 8px solid black;
-  margin-top: 200px;
-  padding: 2px;
-  display: flex;
-  align-items: left;
-  flex-direction: column;
-  justify-content: center;
   
-}

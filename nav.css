@@ -1,0 +1,36 @@
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 30px;
+  justify-content: center;
+}
+a {
+  position: relative;
+  cursor: pointer;
+  color: lightgray;
+  font-size: 28px;
+  padding: 0.5rem 1rem;
+}
+a:after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: black;
+  scale: 1.0;
+  z-index: -1;
+  transition: 0.45s;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+a:hover {
+  border: black;
+  border: 8px red double;
+}
+
+a:hover:: after {
+  scale: 1s;
+  
+}

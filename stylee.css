@@ -1,5 +1,4 @@
 body {
-
     font-family: "Arial", sans-serif;
 
     line-height: 1.6;
@@ -208,5 +207,14 @@ body {
       text-align: center;
       font-size: 1.2em;
       color: #555;
+    }
+    video {
+      width: 300px;
+      height: 250px;
+      justify-content: center;
+      flex-direction: column;
+      border: 8px red double;
+      display: flex;
+      align-items: center;
     }
   }
