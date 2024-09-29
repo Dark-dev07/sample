@@ -1,16 +1,24 @@
 nav {
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   gap: 30px;
   height: 30px;
   justify-content: center;
 }
+img {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 a {
   position: relative;
   cursor: pointer;
   color: lightgray;
-  font-size: 28px;
+  font-size: 10px;
   padding: 0.5rem 1rem;
 }
 a:after {
@@ -23,6 +31,7 @@ a:after {
   transition: 0.45s;
   border-radius: 10px;
   background-color: blue;
+  padding: 10px;
 }
 
 a:hover {
